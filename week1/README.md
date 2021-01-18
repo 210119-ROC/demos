@@ -58,8 +58,9 @@ Be prepared to answer any of the following questions for QC and interviews on **
 4. What is base class of all exceptions? What interface do they all implement?
 5. List some checked and unchecked exceptions?
 6. Multi-catch block: can you catch more than one exception in a single catch block?
+<br>
+<br>
 
-
-<div align="center">Remember to harness the power of Google as you study.</div>
+<div align="center" style="font-size:larger;>Remember to harness the power of Google as you study.</div>
 
 [![Image from Gyazo](https://i.gyazo.com/067549d67e91a451ad38e2fef1c02493.gif)](https://gyazo.com/067549d67e91a451ad38e2fef1c02493)
