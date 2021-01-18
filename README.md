@@ -5,7 +5,7 @@ Here you will find all of the notes from class aslong with study-guides, project
 ### Hackerrank Contest: Sign-up [here](https://www.hackerrank.com/21019-roc-hackathon)
 You can go ahead and join the batch Hackerrank contest beginning on Tuesday January 19th, 2021 at 3:00pm EST.
 
-### Most Recent Slides can be found [here](https://docs.google.com/presentation/d/1Mfb745mCnQUEu-dqElkItbeV-aQLqLMbP0cHSIPPWLE/edit?usp=sharing)
+### Most Recent Slides can be found [here](https://docs.google.com/presentation/d/1akHMQXQN2IaC2uzMEBY9ti8-Ym0MjHr9QUqAL8aW3SQ/edit?usp=sharing)
 ### Most Recent QC/Interview Guide can be found [here]
 
 ### Environment Setup Guide can be found [here](https://github.com/sophiagavrila/environment-setup).
