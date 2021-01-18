@@ -1,5 +1,4 @@
 # How to Do Well in QC Sessions
-
 Performing well in technical interviews, including QC, requires confidently answering both high-level conceptual questions on specific technologies as well as low-level details about how you’ve worked with them.
 <br>
 <br>
@@ -25,7 +24,7 @@ Remember, there are 3 key questions you should ask for every technology you lear
 
 As you go through training, think about this approach for structuring your responses in QC, one-on-ones, and panels. To really improve at answering these conceptual questions, you **MUST** practice your own responses. **Also, it’s not enough to memorize the keywords to say - you must fully understand and internalize the knowledge, otherwise you will not be able to back yourself up when asked follow-up questions.**
 
-## Technical Exercise
+# Technical Exercise
 The exercise below should help you improve your answers in QC, one-on-ones, panels, and interviews. <br>
 ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) **You should complete this exercise each week as you cover new technologies throughout training.** ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
