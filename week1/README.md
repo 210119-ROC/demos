@@ -61,6 +61,6 @@ Be prepared to answer any of the following questions for QC and interviews on **
 <br>
 <br>
 
-<div align="center"><strong>Remember to harness the power of Google as you study.</strong></div>
+<div align="center"><font size="+2"><strong>Remember to harness the power of Google as you study.</strong></font></div>
 
 [![Image from Gyazo](https://i.gyazo.com/067549d67e91a451ad38e2fef1c02493.gif)](https://gyazo.com/067549d67e91a451ad38e2fef1c02493)
