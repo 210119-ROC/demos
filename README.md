@@ -14,4 +14,4 @@ You can go ahead and join the batch Hackerrank contest beginning on Tuesday Janu
 ## Weekly Schedule:
 * Class starts 10:00am EST M-F, ends at 6:00pm M-Th, 1pm on Friday
 * 1 hour lunch break at 1:00pm - 2:00pm EST T-F. On Mondays we have lunch from 12:45pm - 2:00pm EST.
-* Mondays will be our small group Interview days - you will have a 10-15 minute interview with Sophia.  If you're not interviewing, you'll be working on your projects or studying for QC. 
+* Mondays will be our small group Interview days - you will have a 10 minute interview with Sophia.  If you're not interviewing, you'll be working on your projects or studying for QC. 
