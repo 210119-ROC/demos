@@ -1,5 +1,5 @@
 # Week 1: Core Java
-Be prepared to answer any of the following questions for QC and interviews on **Monday Jan. 25th, 2021**.  You may follow this guide, aptly titled [*How To Do Well In QC*](https://github.com/210119-ROC/demos/blob/main/week1/how-to-do-well-in-qc.md).
+Be prepared to answer any of the following questions for QC and interviews on **Monday Jan. 25th, 2021**.  You may follow this guide, aptly titled [*How To Do Well In QC*](https://github.com/210119-ROC/demos/blob/main/week1/how-to-do-well-in-qc.md) to prepare you for QC.
 
 ## Basics
 1. What is Java? / Explain some features of Java
@@ -60,6 +60,6 @@ Be prepared to answer any of the following questions for QC and interviews on **
 6. Multi-catch block: can you catch more than one exception in a single catch block?
 
 
-Remember to harness the power of Google as you study.
+<center>Remember to harness the power of Google as you study.</center>
 
 [![Image from Gyazo](https://i.gyazo.com/067549d67e91a451ad38e2fef1c02493.gif)](https://gyazo.com/067549d67e91a451ad38e2fef1c02493)
