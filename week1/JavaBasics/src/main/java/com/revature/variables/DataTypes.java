@@ -42,6 +42,30 @@ public class DataTypes {
 		int biggestInt = Integer.MAX_VALUE;
 		System.out.println(biggestInt);
 		
+		int y = 100;
+		int z = 4000;
+		System.out.println(y + z);
+		
+		String one = "1";
+		
+		// Challenge: convert our String called one into and integer
+		// then print the value of it plus 2.
+		
+		// Answer:
+		int n = Integer.parseInt(one); // Integer.parseInt returns primitive value
+		// Integer.valueOf returns the actual object.
+		System.out.println(n + 2);
+		
+		int myNum;
+		myNum = 8000;
+		
+		myNum = myNum + 1;// 8001
+		myNum++; //^ this is the same as above; // 8002
+		myNum--; // this subtracts 1
+		System.out.println(myNum);
+		
+		
+		
 	}
 
 }

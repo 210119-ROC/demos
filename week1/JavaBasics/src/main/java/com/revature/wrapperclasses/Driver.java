@@ -8,7 +8,7 @@ public class Driver {
 		/*
 		 * Wrapper Classes
 		 * 
-		 * For every primtiive type in Java, there is a built-in object type called a wrapper class
+		 * For every primtive type in Java, there is a built-in object type called a wrapper class
 		 * 
 		 * For example the built-in Wrapper Class for int is called Integer
 		 */
@@ -23,7 +23,7 @@ public class Driver {
 		char d = 'd'; //primitive datatype
 		System.out.println(d);
 		
-		Character autoboxedChar = 'd';
+		Character autoboxedChar = 'd'; 
 		System.out.println(autoboxedChar);
 		
 		// conversion the other way is called unboxing.
