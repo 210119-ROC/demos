@@ -2,7 +2,6 @@ package com.revature.arrays;
 
 import java.util.Arrays;
 
-import com.sun.tools.javac.code.Attribute.Array;
 
 public class Driver {
 
@@ -19,6 +18,8 @@ public class Driver {
 		 * we use ARRAYS to store multiple values
 		 * an ARRAY can only store one type of data
 		 * an ARRAY is a collection of elements
+		 * 
+		 * [] always denote arrays
 		 */
 
 		int[] numbers = new int[10];
@@ -56,6 +57,9 @@ public class Driver {
 		String girl = names[0]; // we are using a refernce variable to refer to an element AT a particular
 		// position within the array.
 		System.out.println(girl);
+		
+		int[] ages = {42, 13, 3, 99};
+		// when I use curly braces with an Array, I am immediately assigning values AND capacity to my array
 	
 	}
 
