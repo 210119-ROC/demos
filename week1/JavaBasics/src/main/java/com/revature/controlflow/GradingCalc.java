@@ -28,6 +28,8 @@ public class GradingCalc {
 //			System.out.println("The student receives an F! (" + score + "%)");
 //		}
 		
+		// This is a change
+		
 		Scanner scan = new Scanner(System.in);
 	
 		System.out.println("Please enter the maximum grade amount:");
