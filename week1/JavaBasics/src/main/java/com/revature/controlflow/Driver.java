@@ -11,139 +11,161 @@ package com.revature.controlflow;
  */
 public class Driver {
 
-	/*
-	 * Decision Making Statements
-	 * 
-	 * There are 5 types:
-	 * 
-	 * 1. if statements
-	 * 2. if/else statements
-	 * 3. if/else-if statements
-	 * 4. nested if-statements
-	 * 5. switch statements
-	 */
-	
-	
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
-	
+		
 		/*
-		 * if statements:
+		 * Decision Making Statements
 		 * 
-		 * An if statement consists of a condition followed by a statement or set of statements
-		 
-		 * The statement only gets executed IF the given condition is true.
-		 * If the condition is false, then statement is ignored.
+		 * There are five types of decision making statements:
+		 * 		1. if statements
+		 * 		2. if/else statements
+		 * 		3. if/else-if statements
+		 * 		4. nested if statements
+		 * 		5. switch statements
 		 */
 		
-		int num = 80;
+		/*
+		 * if Statements
+		 *  
+		 * An if statement consists a condition, followed by statement or a set of statements.
+		 *  
+		 * The statements gets executed only when the given condition is true. If the condition 
+		 * is false then the statements inside if statement body are completely ignored.
+		 */
+		int num = 72;
 		
-		if (num < 100) {
-			System.out.println("The variable \"num\" is less than or equal to 100!...it's value is " + num);
+		if(num < 100) {
+			System.out.println(num + ", The variable \"num\" is less than 100");
 		}
-		// the short cut to run a program is shift + alt + x..wait 1/2 a sec then press j
-		// sysout + ctrl +space bar, then press enter
 		
 		/*
 		 * if/else Statements
 		 * 
-		 * Syntactically, the if/else statement STARTS the same way as a normal IF statement.
-		 * However, there is an  idditional ELSE block of code (with no conditional) that's
-		 * applied to the end
+		 * Syntactically there the beginning of an if/else statement is identical to the if statement.
+		 * However, an additional else block (no conditional here) is appended to the end.
+		 * 
+		 * The statements inside of the if block would execute if the condition is true, and the statements 
+		 * inside the else block would execute if the condition is false.
 		 */
-		
 		num = 101;
-
 		
-		
-		if (num < 100) {
-			System.out.println("The variable \"num\" is less than 100!...its value is " + num);
+		if(num < 100) {
+			System.out.println(num + ", The variable \"num\" is less than 100");
 		} else {
-			System.out.println("The variable \"num\" is more than 100...its value is " + num);
-			// this statement now executes because num is greater than 100 
+			System.out.println(num + ", The variable \"num\" is more than 100");
 		}
 		
 		/*
-		 * if/ else-if statements:
+		 * if/else-if Statements
 		 * 
-		 * An if-else-if statment is used when we need to check multiple conditions.
+		 * An if-else-if statement is used when we need to check multiple conditions. In this statement we 
+		 * have only one “if” and one “else”, however we can have multiple “else if”. It is also known as 
+		 * if-else-if ladder.
 		 * 
+		 * The most important point to note here is that in if-else-if statement, as soon as the condition 
+		 * is met, the corresponding set of statements get executed, rest gets ignored. If none of the condition 
+		 * is met then the statements inside “else” gets executed.
 		 */
-		
-		// first we test if it's less than, 
-		// then we test if it's more than
-		// then we test if it's equal
-		
 		num = 100;
 		
-		if (num < 100) {
-			System.out.println("The variable \"num\" is less than 100!...its value is " + num);
+		if(num < 100) {
+			System.out.println(num + ", The variable \"num\" is less than 100");
 		} else if (num > 100) {
-			System.out.println("The variable \"num\" is more than 100...its value is " + num);
+			System.out.println(num + ", The variable \"num\" is more than 100");
 		} else {
-			System.out.println("Then num must be equal to 100");
+			System.out.println(num + ", The variable \"num\" is exactly 100");
 		}
-
+		
 		/*
-		 * Nested if Statement:
+		 * Nested if Statements
 		 * 
-		 * If the first condition proves to be true, you can nest another condition to be tested:
+		 * When there is an if statement inside another if statement then it is called the nested if statement.
+		 * 
+		 * The code within the outer if statement will execute if its conditional is true. The code inside of the 
+		 * nested if statement will only execute if both the conditions the outer condition (otherwise, how would 
+		 * it get to the nested if statement?) and its own condition are true.
 		 */
+		num = 64;
 		
-		num = 101;
-		
-		if (num < 100) {
+		if(num < 100) {
+			System.out.println("The variable \"num\" is less than 100");
 			
-			System.out.println("num is less than 100");
-			
-			if (num % 2 == 0) {
-				System.out.println("the number is even.");
-			} else {
-				System.out.println("the number is odd.");
+			if(num % 2 == 0) {
+				System.out.println("The variable \"num\" is even.");
 			}
-			
-			// % modulo operator returns a remainder
-			
-		} else {
-			System.out.println("The number is greater than or equal to 100");
 		}
 		
 		/*
-		 * Switch Statements:
-		 *
+		 * switch Statements
+		 * 
+		 * A switch statement uses the 'switch' keyword followed by a set of parenthesis used to pass a value into the
+		 * switch block. This value will then be compared to nested code blocks called 'cases'. Each case has a value
+		 * associated to it that is compared to the value passed into the switch statement to determine if that case's
+		 * code block should be executed. There can be an optional default block that will be executed if case none of
+		 * the case conditions are met.
+		 * 
+		 * Unlike if/else-if statements, the switch statement can have a number of possible execution paths. A switch 
+		 * works with the byte, short, char, and int primitive data types. It also works with enumerated types (Enum), 
+		 * the String class, and a few special classes that wrap certain primitive types: Character, Byte, Short, and 
+		 * Integer. 
+		 * 
+		 * There are more nuances to switch statements (such as the concept of "fall-through") that will be explored 
+		 * later in the section on Branching Statements.
 		 */
-	
 		String str = "greeting";
 		
 		switch(str) {
 		case "greeting":
 			System.out.println("Hello there, fellow coder!");
-			break; // we use break so that we don't fall through to other statements
+			break; // without break statements, we get fall-through!
 		case "goodbye":
 			System.out.println("Goodbye for now!");
 		case "GREETING":
 			System.out.println("Casing is important, huh?");
 		default:
-			System.out.println("Nothing matched");
+			System.out.println("Nothing matched...");
 		}
 		
 		/*
-		 * for loop:
-		 *
-		 * We use loops to iterate over arrays:
+		 * Looping Statements
+		 * 
+		 * Loops are used to execute a set of statements repeatedly until a particular condition is satisfied. In Java,
+		 * there are three types of basic* loops:
+		 *  
+		 * 		- for
+		 * 		- while
+		 * 		- do-while.
+		 * 
+		 * * - There is another looping statement known as a for-each loop, or enhanced for-loop. This topic is covered in the section
+		 * 	   on variable arguments
+		 */
+
+		/*
+		 * for Loop
+		 * 
+		 * A for loop consists of the 'for' keyword, followed by a set of parenthesis that contain the initialization, conditional, and
+		 * iteration logic of the loop itself, and the code block that will be executed. You can break the flow of a for loop down into
+		 * four steps:
+		 * 
+		 * 	Step 1: 
+		 * 		In for loop, initialization happens first and only one time, which means that 
+		 * 		the initialization part of for loop only executes once.
+		 * 	
+		 * 	Step 2:
+		 * 		Condition in for loop is evaluated on each iteration, if the condition is true 
+		 * 		then the statements inside for loop body gets executed. Once the condition returns 
+		 * 		false, the statements in for loop does not execute and the control gets transferred 
+		 * 		to the next statement in the program after for loop.
+		 * 
+		 * 	Step 3:
+		 * 		After every execution of for loop’s body, the increment/decrement part of for loop 
+		 * 		executes that updates the loop counter.
+		 * 	
+		 * 	Step 4: 
+		 * 		The program jumps back to Step 2 and condition is re-evaluated.
 		 */
 		
 		int[] numbers = {1, 2, 3, 4, 5};
-		
-		// a for loop has 3 steps
-		/*
-		 * 1. we tell the loop where to start
-		 * 2. we tell the loop where to stop
-		 * 3. we tell the loop how to increment
-		 * 
-		 */
 		
 		for (int i=0; i<numbers.length; i++) {
 			
@@ -161,7 +183,24 @@ public class Driver {
 			
 		}
 		
+		// iterate through a loop from 0 to 4, incrementing i each time
+		for(int i = 0; i < 5; i++) {
+			System.out.println("The value of 'i' is: " + i);
+		}
 		
+		// iterate through a loop from 10 to 4, decrementing i each time
+		for(int i = 10; i > 3; i--) {
+			System.out.println("The value of 'i' is: " + i);
+		}
+		
+		// There is no restriction of the way that you manipulate the initialized variables of the for loop during the iterative step.
+		for(int i = 0; i < 100; i+=3) {
+			if(i == 0) {
+				System.out.println(i);
+			} else {
+				System.out.print(", " + i);
+			}
+		}
 		
 	}
 	
