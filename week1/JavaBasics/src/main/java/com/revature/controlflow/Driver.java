@@ -24,6 +24,9 @@ public class Driver {
 	 */
 	
 	
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 	
 		/*
@@ -147,9 +150,17 @@ public class Driver {
 			System.out.println(numbers[i]);
 		}
 		
-		for (int i=0; i<=100; i++) {
+		for (int i=0; i<=100; i++) { // post incrementation is shorthand for i = i+1;
 			System.out.println(i);
 		}
+		
+		// make a for loop to print out all the even numbers between 0 & 100;
+		for (int i=0; i<=100; i+=2) { // i+= 2 is the shorthand way of incrementing by 2
+			
+			System.out.println("The even number is " + i);
+			
+		}
+		
 		
 		
 	}
