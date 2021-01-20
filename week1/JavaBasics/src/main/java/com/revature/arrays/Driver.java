@@ -61,6 +61,8 @@ public class Driver {
 		int[] ages = {42, 13, 3, 99};
 		// when I use curly braces with an Array, I am immediately assigning values AND capacity to my array
 	
+		
+		
 	}
 
 }
