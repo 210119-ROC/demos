@@ -37,7 +37,7 @@ public class World {
 		
 		// googleCEO.eat("apple");
 		
-		Person.eat("apple");
+		Person.eat("apple"); // since eat() is static, I don't need to create an object to call it
 		
 		double BMI = googleCEO.calculateBMI(googleCEO.height_in, googleCEO.weight);
 		System.out.println("The google CEO's BMI is: " + BMI);
