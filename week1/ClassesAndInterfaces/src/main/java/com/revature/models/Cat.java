@@ -3,13 +3,11 @@ package com.revature.models;
 // This is a concrete class
 public class Cat extends Animal {
 
-	public int numberOfLives;
-	private String breed;
+	private String breed; 
 	private boolean hasFur;
-	
+
 	public Cat() {
 		this.numberOfLives = 9;
-		this.hasFur = true;
 	}
 	
 	public Cat(String breed, boolean hasFur) {
@@ -25,7 +23,25 @@ public class Cat extends Animal {
 		System.out.println("Meow");
 		
 	}
+
+	public String getBreed() {
+		return breed;
+	}
+
+	public void setBreed(String breed) {
+		this.breed = breed;
+	}
+
+	public boolean isHasFur() {
+		return hasFur;
+	}
+
+	public void setHasFur(boolean hasFur) {
+		this.hasFur = hasFur;
+	}
 	
 	// Polymorphism - Greek for many forms
+	
+	
 	
 }

@@ -6,6 +6,8 @@ package com.revature.models;
  */
 public abstract class Animal {
 	
+	public int legs;
+	public String color;
 	public int numberOfLives = 1;
 	
 	public Animal() {
