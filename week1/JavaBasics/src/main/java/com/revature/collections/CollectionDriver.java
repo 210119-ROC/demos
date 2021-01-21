@@ -2,7 +2,9 @@ package com.revature.collections;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 import java.util.Set;
 
 /*
@@ -118,9 +120,10 @@ public class CollectionDriver {
 		 */
 		System.out.println("-----------------------------------------------------------------------");
 		
-		Set<User> userSet = new HashSet<User>();
+		HashSet<User> userSet = new HashSet<User>();
 		User z = new User("Zafar", "Kahrov", "zkjava", "12345", "zk@yahoo.com");
 		User z2 = new User("Zafar", "Kahrov", "zkjava", "12345", "zk@yahoo.com");
+		
 		
 	
 		userSet.add(new User("Mary", "Shelley", "ms", "pass", "ms@gmail.com"));
@@ -147,9 +150,35 @@ public class CollectionDriver {
 		System.out.println(z.equals(z2));
 		
 		
+		/*
+		 * Queue
+		 * 
+		 * A queue is a collection designed for holding elements prior to processing.  Besides basic Collections operations 
+		 * (adding, removing elements), the queue provides us different insertion, extration and inspection operations.
+		 * 
+		 * A Queue maintians an order called FIFO
+		 * This stands for first in, first out. 
+		 * 
+		 * 
+		 */
 		
-		
+		System.out.println("=========================================================");
+		// shift + ctrl + o
+		// covariance!
+		Queue<User> userQueue = new LinkedList<User>();
+		userQueue.add(new User("Mary", "Shelley", "ms", "pass", "ms@gmail.com"));
+		userQueue.add(new User("Jack", "Sparrow", "captainjack", "parrot", "pirate@gmail.com"));
+		userQueue.add(new User("Bruce", "Wayne", "batman", "bats$$", "batman@gmail.com"));
 
+//		while( ) { // the parenthesis mark a condition that must be true for while to run
+//			// perform some code
+//		}
+		
+		while(userQueue.size() != 0) {
+			System.out.println("Queue size: " + userQueue.size());
+			System.out.println("Processing: " + userQueue.poll()); // poll() method is only available for Queues
+		}
+		
 	}
 
 }
