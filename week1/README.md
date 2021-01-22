@@ -15,7 +15,7 @@ Be prepared to answer any of the following questions for QC and interviews on **
 11. What is a wrapper class? List them.
 12. What is autoboxing / unboxing?
 13. What are annotations?
-14. How to pass multiple values with a single parameter into a method?
+14. How to pass multiple values with a single parameter into a method? (Var args) -- You will not be asked about this
 15. What are static imports?
 16. What methods are available in the Object class?
 17. What is the difference between == and .equals()?
@@ -41,14 +41,9 @@ Be prepared to answer any of the following questions for QC and interviews on **
 2. What are the interfaces in the Collections API?
 3. What is the difference between a Set and a List?
 4. What is the difference between an Array and an ArrayList?
-5. What is the difference between ArrayList and Vector?
-6. What is the difference between TreeSet and HashSet?
-7. What is the difference between HashTable and HashMap?
 8. Are Maps in the Collections API? What makes Map different from other interfaces?
 9. List several ways to iterate over a Collection. How would you iterate over a Map?
-10. What is the purpose of the Iterable interface? What about Iterator?
-11. What is the difference between the Comparable and Comparator interfaces?
-12. What are generics? What is the diamond operator (<>)?
+12. What are generics? What is the diamond operator (<>)? 
 13. Create and instantiate a generic class. Create and use a generic method.
 
 <br>
