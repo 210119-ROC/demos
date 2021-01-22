@@ -13,7 +13,7 @@ public class Student {
 	private String lastName;
 	private int gradeYear; // 1 = freshman, 2 = sophomore, etc...
 	private String studentId;
-	private String courses = null;
+	private String courses = "";
 	private int tuitionBalance = 0;
 	
 	private static int costOfCourse = 600;
@@ -52,36 +52,62 @@ public class Student {
 		this.studentId = gradeYear + "" + id; 
 	}
 	// enroll() method
-	
+
 	public void enroll() {
 		// Get inside a loop, then the user will hit 'Q' for quit to quit the program
-		
+
 		do {
 			System.out.println("Enter a course to enroll. (Q to quit)");
-			
 			Scanner scan = new Scanner(System.in);
-			
+
 			String course = scan.nextLine();
-			
-			if() //if course != "Q"
-				//, then add the course to the object's course string
-				
-			else {
+
+			if (!course.equalsIgnoreCase("Q")) {
+
+				courses += "\n" + course;
+				tuitionBalance += costOfCourse;
+
+			} else {
+
+				System.out.println("BREAK!");
 				break;
 			}
-			// if the course is == to "Q", then we would break
-			
+
 		} while(true);
 		
+		System.out.println("ENROLLED IN: " + courses);
+		
+	}
+
+	// viewBalance() method
+	public void viewBalance() {
+		System.out.println("Your balance is: $" + tuitionBalance);
+	}
+	
+	// payTuition() method
+	public void payTuition() {
+		viewBalance();
+		
+		System.out.println("Enter your payment amount: $");
+		Scanner scan = new Scanner(System.in);
+		
+		int payment = scan.nextInt();
+		tuitionBalance -= payment; // this means: tuitionBalance = tuitionBlaance - payment
+		
+		System.out.println("Thank you for your payment of: $" + payment);
+		viewBalance();
+	}
+
+	@Override
+	public String toString() {
+		return "Student [firstName=" + firstName + ", lastName=" + lastName + ", gradeYear=" + gradeYear
+				+ ", studentId=" + studentId + ", courses=" + courses + ", tuitionBalance=" + tuitionBalance + "]";
 	}
 	
 	
-	// viewBalance() method
 	
-	// payTuition() method
-	
-	// showStatus()
 
+	
 	
 	
 	
