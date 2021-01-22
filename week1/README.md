@@ -51,13 +51,6 @@ Be prepared to answer any of the following questions for QC and interviews on **
 12. What are generics? What is the diamond operator (<>)?
 13. Create and instantiate a generic class. Create and use a generic method.
 
-## Exceptions
-1. What is the difference between final, .finalize(), and finally?
-2. Explain throw vs throws vs Throwable
-3. Do you need a catch block? Can you have more than 1? Is there an order to follow?
-4. What is base class of all exceptions? What interface do they all implement?
-5. List some checked and unchecked exceptions?
-6. Multi-catch block: can you catch more than one exception in a single catch block?
 <br>
 <br>
 
