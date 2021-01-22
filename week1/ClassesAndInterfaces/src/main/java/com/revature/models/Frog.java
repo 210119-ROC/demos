@@ -1,9 +1,10 @@
 package com.revature.models;
 
+import com.revature.interfaces.Amphibious;
 import com.revature.interfaces.Ectothermic;
-import com.revature.interfaces.Swimmable;
 
-public class Frog extends Animal implements Ectothermic, Swimmable {
+// In Java you can only extend ONE class, but you can IMPLEMENT many INTERFACES
+public class Frog extends Animal implements Ectothermic, Amphibious {
 	
 	
 	@Override

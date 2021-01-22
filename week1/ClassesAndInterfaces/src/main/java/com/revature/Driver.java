@@ -1,10 +1,13 @@
 package com.revature;
 
-import com.revature.interfaces.Ectothermic;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
 import com.revature.models.Animal;
 import com.revature.models.Cat;
 import com.revature.models.Frog;
-import com.revature.models.Tadpole;
 
 public class Driver {
 
@@ -20,7 +23,7 @@ public class Driver {
 		// that is a SUBTYPE of another
 		Animal kermit = new Frog();
 		
-		List<Integer> nums = new List<Integer>();
+
 //		
 //		Cat tom = new Cat("Domestic Shorthair", true);
 //		tom.makeSound();
