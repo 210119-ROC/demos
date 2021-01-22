@@ -52,3 +52,114 @@ Be prepared to answer any of the following questions for QC and interviews on **
 <div align="center"><strong>Remember to harness the power of Google as you study.</strong></div>
 
 [![Image from Gyazo](https://i.gyazo.com/067549d67e91a451ad38e2fef1c02493.gif)](https://gyazo.com/067549d67e91a451ad38e2fef1c02493)
+
+
+
+## Java Study Guide
+
+You should be able to explain and apply the following topics:
+
+### Fundamentals
+- Features, benefits, and drawbacks of the Java language
+  - WORA (write once, run anywhere)
+  - Backed by Oracle
+  - Rich APIs (e.g. Collections API)
+  - Object-oriented
+  - Strongly/strictly typed
+  - High level (e.g. memory handled via automatic garbage collection)
+  - Verbose
+- Stack vs Heap
+- Purpose and contents of the JDK, JRE, and JVM
+- Main method signature and significance
+- Compiling and executing Java code on the command line
+- Primitive data types
+  - boolean
+  - byte
+  - char
+  - short
+  - int
+  - float
+  - double
+  - long
+- Operators
+  - pre / post-increment
+  - ternary
+  - logical
+- Scopes of variables
+  - static / class
+  - object / instance
+  - method
+  - block
+- Control flow statements
+  - for
+  - enhanced for loop
+  - if/else 
+  - while
+  - do-while
+  - switch
+- Class members
+  - Fields
+  - Methods
+  - Constructors
+  - Nested classes (advanced)
+- Access modifiers
+  - public
+  - protected
+  - default
+  - private
+- Non-access modifiers
+  - static
+  - final
+  - abstract
+  - synchronized (look this up!)
+  - transient (look this up!)
+- Packages and import statements
+  - static imports
+- this and super keywords
+- JRE library classes
+  - Object
+    - equals, hashCode, and toString methods
+  - String
+  - Collections
+  - Arrays
+- Wrapper classes
+  - Autoboxing / unboxing
+- String pool
+- == vs .equals()
+- Making objects immutable (you can do this by making ALL fields private and not including any getters or setter methods.
+
+### OOP
+- Object-oriented programming principles
+  - Abstraction
+    - Abstract classes
+    - Interfaces
+  - Polymorphism
+    - Overloading
+    - Overriding
+  - Inheritance
+    - Inheriting from classes vs interfaces (i.e what's the difference between `extends`
+ and `umplements`?  
+ - Encapsulation
+    - Using access modifiers with getters/setters
+- Object vs class (A class is the blueprint for 
+- Abstract classes
+  - Difference between abstract and concrete class
+- Interfaces
+  - Implicit modifiers for variables and methods
+  - When to use instead of abstract class
+
+### Collections & Generics
+- Collections API
+  - Inheritance hierarchy
+  - List, Set, Map, and Queue interfaces and their differences
+  - Concrete implementations of above interfaces and their differences (Think `ArrayList`, `HashSet`, etc)
+  - Using enhanced for loops
+
+- Annotations
+  - @Override
+  - @Deprecated
+- Generics
+  - Generic classes
+  - Generic methods
+  - Diamond operator and type inference
+
