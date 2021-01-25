@@ -1,4 +1,5 @@
 # SQL QC Questions
+*You will be asked the following questions in QC/interviews during the week of February 1st.* 
 
 1.  Explain what SQL is. What are some SQL databases?
     
