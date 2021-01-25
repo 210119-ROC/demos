@@ -2320,3 +2320,5 @@ org.eclipse.core.runtime.CoreException: Launch configuration Driver (5) referenc
 2021-01-25 14:35:33,834 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\SophieGavrila\Desktop\demos\week1\JavaBasics\src\test\resources
 2021-01-25 14:36:08,981 [Worker-59: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2021-01-25 14:36:08,982 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\SophieGavrila\Desktop\demos\week1\JavaBasics\src\main\resources
+2021-01-25 14:36:08,983 [Worker-59: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-01-25 14:36:08,984 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\SophieGavrila\Desktop\demos\week1\JavaBasics\src\test\resources
