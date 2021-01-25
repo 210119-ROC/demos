@@ -1,6 +1,7 @@
 # SQL QC Questions
 *You will be asked the following questions in QC/interviews during the week of February 1st.* 
 
+<br>
 1.  Explain what SQL is. What are some SQL databases?
     
 2.  Draw a simple ERD for modelling Students and Classes
