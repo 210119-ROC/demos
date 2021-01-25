@@ -11,8 +11,9 @@ public class Driver {
 	 * Static Scope: Variables/Methods that belong to the class itself (the blueprint)
 	 * 
 	 * The following two methods only apply to VARIABLES:
+	 
 	 * Method Scope: The outermost scope of a method body
-	 * Block Scope: Further nested scopes inside of a method
+	 * Block Scope: Further nested scopes inside of a method (think of a for-loop)
 	 */
 
 	public int x; // Instance scope
