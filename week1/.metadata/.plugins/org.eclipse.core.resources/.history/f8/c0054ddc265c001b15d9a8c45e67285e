@@ -1,0 +1,23 @@
+package com.revature.models;
+
+/*
+ * An abstract class is a class that CANNOT be instantiated.
+ * Abstract classes often have unimplemented methods that MUST be overidden by a concrete subclass.
+ */
+public abstract class Animal {
+	
+	public int numberOfLives = 1;
+	
+	public Animal() {
+		System.out.println("Animal constructor called!");
+	}
+	
+	public void exist() {
+		System.out.println("The animal is existing");
+	}
+	
+	public void makeSound() {
+		
+	}
+
+}

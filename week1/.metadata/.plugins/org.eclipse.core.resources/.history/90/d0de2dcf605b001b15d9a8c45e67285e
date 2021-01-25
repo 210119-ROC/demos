@@ -1,0 +1,45 @@
+package com.revature.controlflow;
+
+import java.util.Scanner;
+
+public class GradingCalc {
+
+	public static void main(String[] args) {
+	
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Please enter the student's number grade out of 100: ");
+		
+		// now i assign the value that I capture to a reference variable
+		int score = scan.nextInt();
+		
+		if (score >= 90) {
+			System.out.println("The student receives an A! (%" + score);
+		}
+		
+		
+
+	}
+	
+	/*
+	 * The GradingCalc does the following: 
+	 * ** extra first prompt for the total score ---
+	 * 1. It prompts the user to enter score of a student's quiz 
+	 * 
+	 * 2. Upon entering the score, the application will calculate the letter grade that the 
+	 * student has received
+	 * 
+	 * 75/100 --> " The student receives a C (75%)"
+	 * 
+	 * A 90 -100
+	 * B 80 -89
+	 * C 70-79
+	 * D 60-69
+	 * F 0-59
+	 * 
+	 * Advanced Challenge: -->
+	 * 	 create a program that asks for a total score (for example, a quiz might be scored out
+	 * of 20, not 100 
+	 * */
+
+}

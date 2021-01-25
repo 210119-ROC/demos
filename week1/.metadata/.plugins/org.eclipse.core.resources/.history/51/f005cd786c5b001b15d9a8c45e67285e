@@ -1,0 +1,21 @@
+package com.revature;
+
+import com.revature.models.Person;
+
+public class World {
+
+	public static void main(String[] args) {
+	
+		// to instantiate an object of a CLASS type, you do the following
+		Person bob = new Person();
+		
+		bob.lastName = "Smith";
+		
+		// here we are printing out the instance variable of bob's last name
+		System.out.println(bob.lastName);
+		
+		
+
+	}
+
+}

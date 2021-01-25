@@ -1,0 +1,23 @@
+package com.revature;
+
+import java.util.Scanner;
+
+public class Driver {
+
+	public static Scanner scan = new Scanner(System.in);
+	
+	
+	
+	public static void main(String[] args) {
+		
+		// 1. Ask the user how many students we want to add to the DB
+		System.out.println("Enter number of new students to enroll:");
+		
+		int numOfStudents = scan.nextInt();
+		
+		
+		// 2. Create n number of students
+
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.revature.interfaces;
+
+/*
+ * Interfaces can extend one another
+ */
+public interface Amphibious extends Swimmable{
+
+}

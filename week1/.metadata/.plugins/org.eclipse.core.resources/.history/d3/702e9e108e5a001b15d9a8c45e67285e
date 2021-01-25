@@ -1,0 +1,37 @@
+package com.revature.variables;
+
+public class DataTypes {
+
+	// The main method is the entry point of our application
+	public static void main(String[] args) {
+
+		/*
+		 * Java has 8 primitive datatypes
+		 * -- these are NOT objects
+		 * -- But every other value within Java is an object
+		 * 
+		 * There are also non-primitive datatypes (Strings, Arrays, Objects, etc.)
+		 */
+		
+		// a variable is where you store data
+		int x = 10;
+		String name = "Larry";
+		
+		System.out.println(name);
+		System.out.println(x);
+		
+		// this is a reference variable 
+		byte reallySmallNumber = 127; // 8 bits of reserved memory The max value for a byte  is 127 and minimum -127 
+		short shortNumber = 32767; // 16 bits of reserved memory 
+		int var = 100000000; // 32 bits of reservered memory
+		long bigNumber = 123456789L; // 64 bits of memory
+		
+		// Wrapper class is the class name of the data type.  Essentially it is the name of the 
+		// object
+		byte min = Byte.MIN_VALUE;
+		byte max = Byte.MAX_VALUE;
+		System.out.println("The minimum value of a byte is " + min + " and the max value is " + max);
+		
+	}
+
+}

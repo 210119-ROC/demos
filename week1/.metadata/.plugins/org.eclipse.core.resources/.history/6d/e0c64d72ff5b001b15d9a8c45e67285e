@@ -1,0 +1,19 @@
+package com.revature.main;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		
+		// The JVM will search for the main method with this exact method signature
+		// This is the entry point of our application
+		
+		/*
+		 * public - access-modifier: This means that we can access this method ANYWHERE within our application
+		 * 
+		 * static - non-access modifier: This means that we can invoke (call on) this method WITHOUT
+		 * creating an instance of the Driver class.
+		 */
+
+	}
+
+}

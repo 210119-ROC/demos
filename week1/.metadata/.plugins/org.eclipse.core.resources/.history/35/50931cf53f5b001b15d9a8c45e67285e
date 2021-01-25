@@ -1,0 +1,66 @@
+package com.revature.controlflow;
+
+// Here we'll introduce control flow 
+/*
+ * Flow control refers to the practice of managing the way that an application runs and executes
+ * by using special statements These statement types include:
+ * 
+ * - Decision making statements
+ * - Looping statements
+ * - Branching Statements
+ */
+public class Driver {
+
+	/*
+	 * Decision Making Statements
+	 * 
+	 * There are 5 types:
+	 * 
+	 * 1. if statements
+	 * 2. if/else statements
+	 * 3. if/else-if statements
+	 * 4. nested if-statements
+	 * 5. switch statements
+	 */
+	
+	
+	public static void main(String[] args) {
+	
+		/*
+		 * if statements:
+		 * 
+		 * An if statmente consists of a condition followed by a statement or set of statements
+		 
+		 * The statement only gets executed IF the given condition is true.
+		 * If the condition is false, then statement is ignored
+		 */
+		
+		int num = 100;
+		
+		if (num <= 100) {
+			System.out.println("The variable \"num\" is less than or equal to 100!...it's value is " + num);
+		}
+		// the short cut to run a program is shift + alt + x..wait 1/2 a sec then press j
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

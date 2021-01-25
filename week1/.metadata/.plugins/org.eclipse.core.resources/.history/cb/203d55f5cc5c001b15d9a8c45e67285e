@@ -1,0 +1,51 @@
+package com.revature.models;
+
+import java.util.Scanner;
+
+// ctrl + shift + s to save all
+// ctrl + s to save 1
+public class Student {
+	
+	// Student instance variables (properties or fields)
+	private String firstName;
+	private String lastName;
+	private int gradeYear; // 1 = freshman, 2 = sophomore, etc...
+	private String studentId;
+	private String courses;
+	private int tuitionBalance = 0;
+	
+	private static int costOfCourse = 600;
+	// later, let's create a static ID of 1000 which increments everytime we add a new student
+	
+	
+	// Constructor: prompt the user to enter a student's name and year
+	public Student() {
+		Scanner scan = new Scanner(System.in);
+		
+		// capture the first name
+		System.out.println("Enter the student's first name");
+		this.firstName = scan.nextLine();
+		
+		// capture the second name
+		System.out.println("Enter the studen't last name");
+		this.lastName = scan.nextLine();
+		
+		// capture the gradeyear -- here we're using escape sequences
+		System.out.println("Enter Student grade year:\n1 - Freshman\n2 - Sophomore\n3 - Junior\n4 - Senior");
+		this.gradeYear = scan.nextInt();
+		
+		System.out.println(firstName + " " + lastName + " " + gradeYear);
+		
+	}
+
+	// generateId() method
+	
+	// enroll() method
+	
+	// viewBalance() method
+	
+	// payTuition() method
+	
+	// showStatus()
+
+}

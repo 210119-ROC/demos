@@ -1,0 +1,22 @@
+package com.revature.arrays;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		
+		// an int or a String can store single values.
+		int x = 10;
+		String name = "Sophia"; // a string is an object...it is an array of characters
+		String sentence = "This is a sentence";
+		
+		System.out.println(x + name + sentence);
+		
+		/*
+		 * we use ARRAYS to store multiple values
+		 * an ARRAY can only store one type of data
+		 * an ARRAY is a collection of elements
+		 */
+
+	}
+
+}

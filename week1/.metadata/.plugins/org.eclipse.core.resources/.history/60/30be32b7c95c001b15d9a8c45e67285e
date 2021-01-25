@@ -1,0 +1,13 @@
+package com.revature;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		
+		// 1. Ask the user how many students we want to add to the DB
+		
+		// 2. Create n number of students
+
+	}
+
+}

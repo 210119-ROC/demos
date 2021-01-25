@@ -1,0 +1,15 @@
+package com.revature.methods;
+
+public class MyMethods {
+	
+	// the method signature tells us how to access it, and it tells us its return type
+	// this is the signature of the method
+	// void means that this method does not return anything of a particular datatype
+	// rather void means that it does something
+	static void myPrintMethod(String word) {
+		
+		// in this method, we'll take in some data, and print it to the console.
+		System.out.println(word);
+	}
+
+}

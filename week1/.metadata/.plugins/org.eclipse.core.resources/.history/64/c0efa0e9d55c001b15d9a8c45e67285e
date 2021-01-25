@@ -1,0 +1,24 @@
+package com.revature;
+
+//ctrl + shift + o
+import com.revature.models.Student;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		
+		Student stu1 = new Student();
+		stu1.enroll();
+		
+//		Student stu2 = new Student();
+//		
+		
+		
+		// 1. Ask the user how many students we want to add to the DB
+		
+		
+		// 2. Create n number of students
+
+	}
+
+}

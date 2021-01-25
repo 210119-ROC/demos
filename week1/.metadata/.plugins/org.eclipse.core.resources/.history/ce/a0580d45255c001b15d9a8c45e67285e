@@ -1,0 +1,17 @@
+package com.revature.models;
+
+public class Frog {
+	
+	public int legs;
+	public String color;
+	public int numberOfLives;
+	
+	public void makeSound() {
+		System.out.println("Ribbit ribbit...");
+	}
+	
+	public void exist() {
+		System.out.println("J'EXISTE");
+	}
+
+}
