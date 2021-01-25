@@ -1,0 +1,16 @@
+package com.revature.exceptions;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		int x = 10;
+		int y = 2;
+		
+		System.out.println(divide(x, y));
+
+	}
+	
+	private static int divide(int x, int y) { 
+		return x/y;
+	}
+}

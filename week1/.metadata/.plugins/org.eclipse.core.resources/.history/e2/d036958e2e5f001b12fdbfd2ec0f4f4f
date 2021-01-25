@@ -1,0 +1,51 @@
+package com.revature.exceptions;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		int x = 10;
+		int y = 0;
+		
+		System.out.println(divideEAFP(x, y));
+		
+		System.out.println("I made it to this line!");
+
+	}
+	
+	private static int divide(int x, int y) { 
+		return x/y;
+	}
+	
+	/*
+	 * In programming there are two ways to prevent our application from crashing!
+	 * 
+	 * 1. Look Before You Leap (LBYL)
+	 * 2. Easier to Ask for Forgiveness than Permission (EAFP)
+	 */
+	
+	// LBYL
+	private static int divideLBYL(int x, int y) { 
+		if (y != 0) {
+			return x/y;
+		} else {
+			return 0;
+		}
+		
+	}
+	
+	// I want to safe-guard my code against crashing because I 
+	// get an Arithmetic exception
+	private static int divideEAFP(int x, int y) { 
+		
+		// SURROUND YOUR CODE IN A TRY/CATCH BLOCK
+		try {
+			return x/y;
+		} catch (RuntimeException e) {
+			// the catch block determines how we want to recover
+			System.out.println(e);
+			return 0;
+		}
+			
+	}
+	
+}

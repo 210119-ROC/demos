@@ -1,0 +1,18 @@
+package com.revature.exceptions;
+
+public class BankDriver {
+
+	public static void main(String[] args) {
+		System.out.println("The amount left after withdrawing is: " + withdraw(1000, 300));
+
+	}
+	
+	public static double withdraw(double balance, double amountToWithdraw) {
+		
+		double remainingBalance = balance - amountToWithdraw;
+		
+		return remainingBalance;
+		
+	}
+
+}

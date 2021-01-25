@@ -1,0 +1,9 @@
+package com.revature.exceptions;
+
+public class OverdraftException extends RuntimeException{
+	
+	public OverdraftException() {
+		super();
+	}
+
+}
