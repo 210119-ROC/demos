@@ -1,4 +1,0 @@
-Host pipeline
-	HostName <ec2-public-ip>
-	IdentityFile ~/.ssh/keys/EC2PracticeKey.pem
-	User ec2-user

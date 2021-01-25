@@ -64,18 +64,10 @@ public class Driver {
 		 * Due to this extra safety, StringBuffer is slower.
 		 */
 		
-		String test = "test";
-		StringBuilder t = new StringBuilder(test);
-		System.out.println(t.reverse());
-		
 		StringBuilder sb = new StringBuilder("Hello");
 		// StringBuilder and StringBuffer ARE mutable!
 		sb.reverse();
 		
-		System.out.println(sb);
-		
-		
-		System.out.println(sb.append('y'));
 		System.out.println(sb);
 		
 		// sb is now equal to "olleH"
@@ -83,22 +75,7 @@ public class Driver {
 		String word = new String("hello");
 		
 		System.out.println(word.substring(3)); // "lo"
-		System.out.println(word);// lo? or is it still "hello"? still HELLO because Strings are immutable
-		
-		System.out.println(reversed("Testing"));
-		
-	}
-	
-	public static String reversed(String s) {
-		
-		String answer = "";
-		
-		for (int i=s.length()-1; i>=0; i--) {
-			
-			answer += s.charAt(i);
-		}
-		
-		return answer;
+		System.out.println(word);// lo? or is it still "hello"?
 	}
 
 }

@@ -85,11 +85,11 @@ public class Driver {
 		System.out.println(word.substring(3)); // "lo"
 		System.out.println(word);// lo? or is it still "hello"? still HELLO because Strings are immutable
 		
-		System.out.println(reversed("Testing"));
+		
 		
 	}
 	
-	public static String reversed(String s) {
+	public String reversed(String s) {
 		
 		String answer = "";
 		
