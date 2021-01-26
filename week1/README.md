@@ -33,8 +33,7 @@ Be prepared to answer any of the following questions for QC and interviews on **
 6. What is the difference between method overloading and overriding? What are the rules for changing the method signature of overloaded methods?
 7. Can you overload / override a main method? static method? a private method? a default method? a protected method?
 8. When do you use extends or implements keywords?
-9. What are enumerations (enums)?
-10. What are the implicit modifiers for interface variables / methods?
+9. What are the implicit modifiers for interface variables / methods?
 
 ## Collections / Generics
 1. What are collections in Java?
