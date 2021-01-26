@@ -43,8 +43,6 @@ Be prepared to answer any of the following questions for QC and interviews on **
 8. Are Maps in the Collections API? What makes Map different from other interfaces?
 9. List several ways to iterate over a Collection. How would you iterate over a Map?
 12. What are generics? What is the diamond operator (<>)? 
-13. Create and instantiate a generic class. Create and use a generic method.
-
 <br>
 <br>
 
