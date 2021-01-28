@@ -17,7 +17,7 @@ public class UserDaoImpl implements UserDao{
  * That way, other parts of our application can interact with the DB without needing to think
  * about this complex logic.
  */
-	
+			
 	@Override
 	public int insert(User u) {
 		
@@ -34,25 +34,30 @@ public class UserDaoImpl implements UserDao{
 		// They work for PreparedStatements, which are designed to protect us from SQL injection 
 		
 		// Step 3a: Obtain Statement Object
-
-			PreparedStatement stmt = conn.prepareStatement(sql);
+		// PreparedStatement is a sub interface of Statment  that provides extra
+		// security to prevent SQL injection.
+		PreparedStatement stmt = conn.prepareStatement(sql);
 			
 			
-		// Step 3b: Inject values to replace all th ? marks
-			
+		// Step 3b: Inject values to replace all the ? marks 
+		stmt.setString(1, u.getUsername());
+		stmt.setString(2, u.getPassword());
+		stmt.setString(3, u.getFirstName());
+		stmt.setString(4, u.getLastName());
+		stmt.setString(5, u.getEmail());
+		stmt.setInt(6, u.getRole().getId()); // this is returning the int value for the Role id of the Role object
+		
 			
 		// Step 4: Execute the statement;
-			
-			
-			
+		return stmt.executeUpdate(); // this will return the number of statements executed (1)
+
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
-		
-		
+		// otherwise we return 0 if we cannot insert
 		return 0;
 	}
 
