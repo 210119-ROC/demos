@@ -35,6 +35,10 @@ public class UserService {
 		return dao.findAll();
 	}
 	
+	public User returnAUserById(int id) {
+		return dao.findById(id);
+	}
+	
 	
 	
 
