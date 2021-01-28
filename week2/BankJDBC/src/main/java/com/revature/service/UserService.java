@@ -30,7 +30,7 @@ public class UserService {
 		return dao.insert(u);
 	}
 	
-	public List<User> findAllUsers() {
+	public List<User> returnAllUsers() {
 		
 		return dao.findAll();
 	}
