@@ -2,6 +2,12 @@ package com.revature.models;
 
 public class User {
 	
+	/*
+	 * Model classes are used to hold data for an object.
+	 * This model must correspond exactly with the User table in SQL
+	 * 
+	 */
+	
 	private int id;
 	private String username;
 	private String password;
@@ -10,8 +16,13 @@ public class User {
 	private String email;
 	private Role role;
 	
+	// no-args constructor, and a full parameterized constructor CHECKC
+	// getters/setters
+	// toString method
+	// hashcodes and equals
+	
 	public User() {
-		System.out.println("A USER HAS BEEN CREATED");
+		
 	}
 
 	public User(int id, String username, String password, String firstName, String lastName, String email, Role role) {
@@ -90,6 +101,7 @@ public class User {
 		result = prime * result + id;
 		result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
+		result = prime * result + ((role == null) ? 0 : role.hashCode());
 		result = prime * result + ((username == null) ? 0 : username.hashCode());
 		return result;
 	}
@@ -125,6 +137,11 @@ public class User {
 				return false;
 		} else if (!password.equals(other.password))
 			return false;
+		if (role == null) {
+			if (other.role != null)
+				return false;
+		} else if (!role.equals(other.role))
+			return false;
 		if (username == null) {
 			if (other.username != null)
 				return false;
@@ -136,8 +153,9 @@ public class User {
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", username=" + username + ", password=" + password + ", firstName=" + firstName
-				+ ", lastName=" + lastName + ", email=" + email + "]";
+				+ ", lastName=" + lastName + ", email=" + email + ", role=" + role + "]";
 	}
-
+	
+	
 
 }

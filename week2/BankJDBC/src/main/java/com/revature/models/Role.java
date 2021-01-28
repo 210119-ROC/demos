@@ -1,18 +1,18 @@
 package com.revature.models;
 
 public class Role {
-
+	
 	private int id;
-	private String role;
+	private String name;
 	
 	public Role() {
 		
 	}
 
-	public Role(int id, String role) {
+	public Role(int id, String name) {
 		super();
 		this.id = id;
-		this.role = role;
+		this.name = name;
 	}
 
 	public int getId() {
@@ -23,17 +23,17 @@ public class Role {
 		this.id = id;
 	}
 
-	public String getRole() {
-		return role;
+	public String getName() {
+		return name;
 	}
 
-	public void setRole(String role) {
-		this.role = role;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	@Override
 	public String toString() {
-		return "Role [id=" + id + ", role=" + role + "]";
+		return "Role [id=" + id + ", name=" + name + "]";
 	}
 
 	@Override
@@ -41,7 +41,7 @@ public class Role {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + id;
-		result = prime * result + ((role == null) ? 0 : role.hashCode());
+		result = prime * result + ((name == null) ? 0 : name.hashCode());
 		return result;
 	}
 
@@ -56,13 +56,14 @@ public class Role {
 		Role other = (Role) obj;
 		if (id != other.id)
 			return false;
-		if (role == null) {
-			if (other.role != null)
+		if (name == null) {
+			if (other.name != null)
 				return false;
-		} else if (!role.equals(other.role))
+		} else if (!name.equals(other.name))
 			return false;
 		return true;
 	}
 	
 	
+
 }
