@@ -96,7 +96,7 @@ public class UserDaoImpl implements UserDao {
 
 			while (rs.next()) {
 				int id = rs.getInt("id");
-				String username = rs.getString("username");
+				String username = rs.getString("username"); // Every word in " " is the name of the SQL column we're iterating over
 				String pass = rs.getString("pass");
 				String firstName = rs.getString("first_name");
 				String lastName = rs.getString("last_name");
@@ -128,12 +128,12 @@ public class UserDaoImpl implements UserDao {
 	public User findById(int id) {
 		// In this method we return ALL user objects
 
-		// Hence, we need to create a List<User> at the top of the method
+		// Hence, we need to create a User at the top of the method.  We will give this User it's properties
 		User u = new User();
 
 		Connection conn = ConnectionUtil.getConnection();
 		String sql = "SELECT * FROM users INNER JOIN roles ON users.role_id = roles.id WHERE users.id = " + id + "";
-		// This is returning BOTh user info and the name of their Role
+		// This is returning BOTh user info AND the name of their Role
 
 		try {
 			Statement stmt = conn.createStatement();
@@ -152,11 +152,11 @@ public class UserDaoImpl implements UserDao {
 		} catch (SQLException e) {
 
 			e.printStackTrace();
-			// if something goes wrong, return an empty list
-			return new User();
+			// if something goes wrong, return null
+			return null;
 		}
 
-		// If everything goes well, return the allUsers arrayList
+		// If everything goes well, return the User object
 		return u;
 	}
 
