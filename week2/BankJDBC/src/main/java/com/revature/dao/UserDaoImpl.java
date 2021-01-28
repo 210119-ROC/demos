@@ -32,15 +32,15 @@ public class UserDaoImpl implements UserDao {
 			// import Connection from java.sql
 			Connection conn = ConnectionUtil.getConnection();
 
-			// Step 2. Define our SQL statmentts to perform an action on our DB
+			// Step 2. Define our SQL statements to perform an action on our DB
 			String columns = "username, pass, first_name, last_name, email, role_id";
 			String sql = "INSERT INTO users (" + columns + ") VALUES (?, ?, ?, ?, ?, ?)";
-			// The ?'s are placeholders for input values
+			// The ?'s are place-holders for input values
 			// They work for PreparedStatements, which are designed to protect us from SQL
 			// injection
 
 			// Step 3a: Obtain Statement Object
-			// PreparedStatement is a sub interface of Statment that provides extra
+			// PreparedStatement is a sub interface of Statement that provides extra
 			// security to prevent SQL injection.
 			PreparedStatement stmt = conn.prepareStatement(sql);
 
@@ -56,7 +56,6 @@ public class UserDaoImpl implements UserDao {
 			return stmt.executeUpdate(); // this will return the number of statements executed (1)
 
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -119,7 +118,6 @@ public class UserDaoImpl implements UserDao {
 			// if something goes wrong, return an empty list
 			return new ArrayList<User>();
 			
-			System.out.println(c1.register());
 		}
 
 		// If everything goes well, return the allUsers arrayList
