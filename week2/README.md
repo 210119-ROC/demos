@@ -14,9 +14,9 @@
     
 5.  What are some SQL clauses you can use with SELECT statements?
     
-6.  What is the difference between WHERE and HAVING? *WHERE is used to filter rows before grouping and HAVING is used to exclude records after grouping.
+6.  What is the difference between WHERE and HAVING? *`WHERE` is used to filter rows before grouping and `HAVING` is used to exclude records after grouping.
 
-Read more: https://www.java67.com/2019/06/difference-between-where-and-having-in-sql.html#ixzz6kwoJQmXd*
+Read more [here]( https://www.java67.com/2019/06/difference-between-where-and-having-in-sql.html#ixzz6kwoJQmXd)*.
     
 7.  Explain what the ORDER BY and GROUP BY clauses do
     
