@@ -9,77 +9,34 @@ import com.revature.models.Role;
 import com.revature.models.User;
 import com.revature.service.UserService;
 
-
 public class Driver {
 
 	public static void main(String[] args) {
-		UserDao dao = new UserDaoImpl();// UserDaoImpl is a TYPE of UserDao
 		
-		// Calling methods from the service layer allows us more abstraction
-		// we can incorporate extra code into our Service layer
-		UserService us = new UserService();
 		
-//		Connection conn = ConnectionUtil.getConnection();
 		
-//		User u1 = new User("skywalker99", "lightsaber", "Luke", "Skywalker", "jedi@mail.com", new Role(1, "Admin"));
-//		
-//		System.out.println(dao.insert(u1)); // if we are successful, we return a 1-- if not,we return a 0;
-		
-		//System.out.println(us.returnAllUsers());
-		
-		System.out.println(us.returnAUserById(2));
-		
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Welcome to the galactic bank!\n Please enter your username");
-		String inputUsername = scan.nextLine();
-		System.out.println("Please enter your password:\n");
-		String inputPassword = scan.nextLine();
-		System.out.println("Please enter your first name:\n");
-		String inputFirstName = scan.nextLine();
-		System.out.println("Please enter your last name\n");
-		String inputLastName = scan.nextLine();
-		System.out.println("Please enter you email\n");
-		String inputEmail = scan.nextLine();
-		System.out.println("Are you a Admin or an Employee?\n Press [1] for Admin\n Press [2] for Employee:\n");
-		
-		int roleId;
-		
-		if (scan.nextInt() == 1) {
-			roleId = 1;
-		} else {
-			roleId = 2;
-		}
-		
-		Role r = new Role(roleId);
-		if (r.getId() == 1) {
-			r.setName("Admin");
-		} else {
-			r.setName("Employee");
-		}
-		
-		User u = new User(inputUsername, inputPassword, inputFirstName, inputLastName, inputEmail, r);
-		
-		System.out.println(dao.insert(u));
-
-		System.out.println(us.returnAllUsers());
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+	public static void run() {
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println("Welcome to the Bank!\n [1] To register\n [2] To login\n");
+		
+		int choice = scan.nextInt();
+		
+		if(choice == 1) {
+			register();
+		} else if (choice == 2){
+			//login();
+			// In a sign in method, I would have to use a method from my UserService or my
+			// DaoImpl class.....
+			
+			// I would have to query both the username AND the password, and make sure they match.
+		}
+
+	}
+
 	
 
 }

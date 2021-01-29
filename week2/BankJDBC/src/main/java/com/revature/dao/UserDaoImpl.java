@@ -159,8 +159,40 @@ public class UserDaoImpl implements UserDao {
 
 	@Override
 	public User findByUsername(String username) {
-		// TODO Auto-generated method stub
-		return null;
+
+				// Hence, we need to create a User at the top of the method.  We will give this User it's properties
+				User u = new User();
+
+				Connection conn = ConnectionUtil.getConnection();
+				String sql = "SELECT * FROM users INNER JOIN roles ON users.role_id = roles.id WHERE users.username = " + username + "";;
+
+
+				try {
+					Statement stmt = conn.createStatement();
+					ResultSet rs = stmt.executeQuery(sql);
+
+					while (rs.next()) {
+						u.setId(rs.getInt("id"));
+						u.setUsername(username); // we already passed this in through the method
+						u.setPassword(rs.getString("pass"));
+						u.setFirstName(rs.getString("first_name"));
+						u.setLastName(rs.getString("last_name"));
+						u.setEmail(rs.getString("email"));
+						
+						u.setRole(new Role(rs.getInt("role_id"), rs.getString("role_name"))); // THIS IS FROM THE ROLES table
+						// we "stuck" the roles table TO the users table with a joins statement
+						// ^ the above line builds a role object ^ 
+					}
+
+				} catch (SQLException e) {
+
+					e.printStackTrace();
+					// if something goes wrong, return null
+					return null;
+				}
+
+				// If everything goes well, return the User object
+				return u;
 	}
 
 	@Override
