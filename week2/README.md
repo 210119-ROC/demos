@@ -5,7 +5,7 @@
 
 1.  Explain what SQL is. What are some SQL databases?
     
-2.  Draw a simple ERD for modelling Students and Classes
+2.  Draw a simple ERD for modeling Students and Classes
     
 3.  What are the 5 sublanguages of SQL? Which commands correspond to them?
     
@@ -25,13 +25,13 @@
     
 11.  What is a candidate key? What about a surrogate key?
     
-12.  What conditions lead to orphan records?
+12.  What conditions lead to orphan records? (*Think about what happens when we delete from a table that a child table is dependent on because it feautres its Primary keys as foreign keys within the table*)
     
 13.  What are some SQL data types?
     
 14.  What is normalization? What are the levels?
     
-15.  What are the properties a transaction must follow?
+15.  What are the properties a transaction must follow? (*A.C.I.D*)
     
 16.  Explain the different isolation levels. What read phenomena do each prevent?
     
@@ -39,18 +39,23 @@
     
 18.  What are the types of joins? Explain the differences.
     
-19.  Explain the difference between UNION, UNION ALL, and INTERSECT
+19.  What is a cascade delete?
     
-20.  What is a cascade delete?
+20.  How would you setup a primary key that automatically increments with every INSERT statement?
     
-21.  What is the purpose of a view? What about an index?
+21.  What is the difference between scalar and aggregate functions? Give examples of each
     
-22.  What’s the difference between a clustered and non-clustered index?
-    
-23.  What is a trigger? Give the syntax for creating a trigger.
-    
-24.  How would you setup a primary key that automatically increments with every INSERT statement?
-    
-25.  What is the difference between scalar and aggregate functions? Give examples of each
-    
-26.  What’s the difference between implicit and explicit cursors?
+# JDBC Questions
+1. What is JDBC?
+
+2. What are the core interfaces / classes in JDBC?
+
+3. What is a stored procedure and how would you call it in Java?
+
+4. What is the difference between Statement and PreparedStatement?
+
+5. Steps to executing an SQL query using JDBC?
+
+6. How to execute stored procedures using JDBC?
+
+7. Which interface is responsible for transaction management? `Connection` Interface.  See this resource here about [JDBC and Transaction management](https://www.javatpoint.com/transaction-management-in-jdbc#:~:text=In%20JDBC%2C%20Connection%20interface%20provides%20methods%20to%20manage%20transaction)
