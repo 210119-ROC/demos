@@ -1,4 +1,6 @@
-# SQL QC Questions
+> *Scroll down to the bottom for study guide/notes!*
+
+## SQL QC Questions
 *You will be asked the following questions in QC/interviews on Wednesday February 3rd.* 
 <br>
 
