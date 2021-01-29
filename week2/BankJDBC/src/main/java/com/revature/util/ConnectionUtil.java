@@ -27,7 +27,7 @@ public class ConnectionUtil {
 		Connection conn = null;
 		Properties prop = new Properties();
 		
-		// The properties object allows me to read characters (like my credentials) frmom anotehr file.
+		// The properties object allows me to read characters (like my credentials) from another file.
 		try {
 			prop.load(new FileReader("C:\\Users\\SophieGavrila\\Desktop\\demos\\week2\\BankJDBC\\src\\main\\resources\\application.properties"));
 			

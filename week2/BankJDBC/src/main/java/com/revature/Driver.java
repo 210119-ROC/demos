@@ -1,20 +1,30 @@
 package com.revature;
 
-import java.sql.Connection;
 import java.util.Scanner;
 
 import com.revature.dao.UserDao;
 import com.revature.dao.UserDaoImpl;
-import com.revature.models.Role;
-import com.revature.models.User;
+import com.revature.exceptions.InsufficientFundsException;
+import com.revature.models.Account;
 import com.revature.service.UserService;
 
 public class Driver {
 
 	public static void main(String[] args) {
 		
+//		run();
 		
+		UserDao dao = new UserDaoImpl();
 		
+		System.out.println(dao.findByUsername("skywalker99"));
+		
+//		Account lukesAccount = new Account(1, 2, 1, 100, 2);
+//		
+//		try {
+//			lukesAccount.withdraw(2000); // the throws keyword forces us to handle this wherever it's called
+//		} catch (InsufficientFundsException e) {
+//			e.printStackTrace();
+//		} 
 		
 	}
 
@@ -25,10 +35,22 @@ public class Driver {
 		
 		int choice = scan.nextInt();
 		
+		UserService us = new UserService();
+		 
 		if(choice == 1) {
-			register();
+			UserService.register();
 		} else if (choice == 2){
-			//login();
+			scan.nextLine();
+			System.out.println("Enter your username:\n");
+			
+			String username = scan.nextLine();
+		
+			
+			System.out.println("Enter your password:\n");
+			
+			String password = scan.nextLine();
+			
+			UserService.login(username, password);
 			// In a sign in method, I would have to use a method from my UserService or my
 			// DaoImpl class.....
 			

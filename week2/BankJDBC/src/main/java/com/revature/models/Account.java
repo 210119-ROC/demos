@@ -1,12 +1,14 @@
 package com.revature.models;
 
+import com.revature.exceptions.InsufficientFundsException;
+
 public class Account {
 	
 	private int accId; // Primary key
 	private int usrId; // Foreign key that reference the id column (primary key) of the user table
 	private int accType; // Foreign key that references the ACC_Types table
 	private double balance;
-	private int active;
+	private int active; // 1 could be pending, 2, active, 3 closed -- could also be a boolean
 	
 	public Account() {
 		
@@ -22,9 +24,9 @@ public class Account {
 	}
 
 	
-	public double withdraw(double amount) throws  InsuffiecientFundsException{
+	public double withdraw(double amount) throws InsufficientFundsException{
 		if (amount > balance) {
-			throw new InsuffiecientFundsException(); // I could create my own exceptions
+			throw new InsufficientFundsException(); // I could create my own exceptions
 		} 
 		
 		if (balance - amount < 10) {
@@ -42,7 +44,9 @@ public class Account {
 			System.out.println("Please enter a positive amount\n");	
 		}
 		
+		balance += amount;
 		
+		return balance; //You could return balance, then use a System.out.println(); statment to print the new amount. 
 		
 	}
 	

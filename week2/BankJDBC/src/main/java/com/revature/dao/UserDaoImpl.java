@@ -164,7 +164,7 @@ public class UserDaoImpl implements UserDao {
 				User u = new User();
 
 				Connection conn = ConnectionUtil.getConnection();
-				String sql = "SELECT * FROM users INNER JOIN roles ON users.role_id = roles.id WHERE users.username = " + username + "";;
+				String sql = "SELECT * FROM users INNER JOIN roles ON users.role_id = roles.id WHERE users.username = " + username + "";
 
 
 				try {
@@ -173,7 +173,7 @@ public class UserDaoImpl implements UserDao {
 
 					while (rs.next()) {
 						u.setId(rs.getInt("id"));
-						u.setUsername(username); // we already passed this in through the method
+						u.setUsername(rs.getString("username")); // we already passed this in through the method
 						u.setPassword(rs.getString("pass"));
 						u.setFirstName(rs.getString("first_name"));
 						u.setLastName(rs.getString("last_name"));
