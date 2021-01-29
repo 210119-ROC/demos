@@ -4,7 +4,7 @@
 *You will be asked the following questions in QC/interviews on Wednesday February 3rd.* 
 <br>
 
-1.  Explain what SQL is. What are some SQL databases? *What is an RDBMS*?
+1.  Explain what SQL is. What are some SQL RDBMS Vendors? *What is an RDBMS*?
     
 2.  Draw a simple ERD for modeling Students and Classes
     
