@@ -46,7 +46,7 @@
     
 21.  What is the difference between scalar and aggregate functions? Give examples of each
     
-# JDBC Questions
+## JDBC Questions
 1. What is JDBC?
 
 2. What are the core interfaces / classes in JDBC?
