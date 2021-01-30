@@ -16,6 +16,8 @@ public class Driver {
 		
 		UserDao dao = new UserDaoImpl();
 		
+		// this method I will need to work on
+		// findByID DOES work
 		System.out.println(dao.findByUsername("skywalker99"));
 		
 //		Account lukesAccount = new Account(1, 2, 1, 100, 2);

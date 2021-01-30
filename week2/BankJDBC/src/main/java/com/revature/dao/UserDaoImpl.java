@@ -164,20 +164,37 @@ public class UserDaoImpl implements UserDao {
 				User u = new User();
 
 				Connection conn = ConnectionUtil.getConnection();
-				String sql = "SELECT * FROM users INNER JOIN roles ON users.role_id = roles.id WHERE users.username = " + username + "";
+				
+				// this is what I had before...this is what caused the problem! (See lines 176 - 185 for an explanation).
+			    //String sql = "SELECT * FROM users INNER JOIN roles ON users.role_id = roles.id WHERE users.username = "+ username +  "";
+				
+				String sql = "SELECT * FROM users INNER JOIN roles ON users.role_id = roles.id WHERE users.username = ? ";
 
 
 				try {
-					Statement stmt = conn.createStatement();
-					ResultSet rs = stmt.executeQuery(sql);
+					/*
+					*Notice that I used a prepared statement for the username passed through the method.
+					*
+					 Using a prepared statment minimizes complexity. If I had simply concatenated the username (like I had before),
+					 SQL would have read the statement with "".  
+					 
+					 WHat do the extra ""'s do?
+					 Instead of looking up the specific username value, it would have 
+					 searched for a column or table called "username" BEACAUSE I used ""'s.
+					 
+					 It is best to use a prepared statement, which I have done below:
+					 */
+					PreparedStatement ps = conn.prepareStatement(sql);
+					ps.setString(1, username);
+					ResultSet rs = ps.executeQuery();
 
 					while (rs.next()) {
-						u.setId(rs.getInt("id"));
-						u.setUsername(rs.getString("username")); // we already passed this in through the method
-						u.setPassword(rs.getString("pass"));
-						u.setFirstName(rs.getString("first_name"));
-						u.setLastName(rs.getString("last_name"));
-						u.setEmail(rs.getString("email"));
+						u.setId(rs.getInt(1));
+						u.setUsername(username); // we already passed this in through the method
+						u.setPassword(rs.getString(3));
+						u.setFirstName(rs.getString(4));
+						u.setLastName(rs.getString(5));
+						u.setEmail(rs.getString(6));
 						
 						u.setRole(new Role(rs.getInt("role_id"), rs.getString("role_name"))); // THIS IS FROM THE ROLES table
 						// we "stuck" the roles table TO the users table with a joins statement
