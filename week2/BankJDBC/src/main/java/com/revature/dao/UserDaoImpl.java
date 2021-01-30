@@ -175,7 +175,7 @@ public class UserDaoImpl implements UserDao {
 					/*
 					*Notice that I used a prepared statement for the username passed through the method.
 					*
-					 Using a prepared statment minimizes complexity. If I had simply concatenated the username (like I had before),
+					 Using a prepared statement minimizes complexity. If I had simply concatenated the username (like I had before),
 					 SQL would have read the statement with "".  
 					 
 					 WHat do the extra ""'s do?
