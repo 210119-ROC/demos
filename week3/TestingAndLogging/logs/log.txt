@@ -1,0 +1,9 @@
+2021-02-01 14:48:03 INFO  LoggingDriver:33 - PROGRAM START!
+2021-02-01 14:52:37 INFO  LoggingDriver:33 - PROGRAM START!
+2021-02-01 14:57:13 INFO  LoggingDriver:33 - PROGRAM START!
+2021-02-01 15:03:12 INFO  LoggingDriver:33 - PROGRAM START!
+2021-02-01 15:03:12 INFO  LoggingDriver:38 - Computation successful!
+2021-02-01 15:03:12 INFO  LoggingDriver:46 - PROGRAM END!
+2021-02-01 15:03:31 INFO  LoggingDriver:33 - PROGRAM START!
+2021-02-01 15:03:31 WARN  LoggingDriver:42 - WARNING: Division by zero not successful
+2021-02-01 15:03:31 INFO  LoggingDriver:46 - PROGRAM END!
