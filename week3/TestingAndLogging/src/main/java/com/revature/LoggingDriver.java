@@ -4,6 +4,8 @@ import org.apache.log4j.Logger;
 // these is similar to java.sql
 // and other packages that we've imported from JDBC
 
+import com.revature.models.Cactus;
+
 public class LoggingDriver {
 
 	// Our logger object BELONGS to LoggingDriver class
@@ -32,6 +34,12 @@ public class LoggingDriver {
 		
 		log.info("PROGRAM START!");
 		
+		
+		Cactus c = new Cactus();
+		log.info("Cactus created successful" + c.toString());
+		
+		
+		
 		try {
 			int i = 10/0;
 			
@@ -58,6 +66,7 @@ public class LoggingDriver {
 		 * FATAL: Very uncommon, but signals that the applicaiton will fail because
 		 * something has gone catestrophically wrong 
 		 */
+		
 		
 		
 		

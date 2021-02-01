@@ -3,7 +3,11 @@ package com.revature.models;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
 public class Cactus {
+	
+	private static Logger log = Logger.getLogger(Cactus.class);
 	
 	private double height;
 	private double waterStored; // in gallons
@@ -73,11 +77,30 @@ public class Cactus {
 	// then it returns the number of flowers as an integer value.
 	public int bloom() {
 		System.out.println("This cactus has " + flowers);
+		
 		return flowers.size();
 	}
 	
+	public int divide(int x, int y) {
+		return x/y;
+	}
 	
 	
+	public double grow(double rainfall) {
+		
+		if (rainfall < 0) {
+			log.warn("Negative rainfall exception thrown system recovered.");
+			throw new IllegalArgumentException("Rainfall can't be negative");
+			
+			
+		}
+		
+		height += 0.01 * rainfall; // short hand for: height = height + (0.01 * rainfall);
+		waterStored += 0.9 * rainfall;
+		
+		return height;
+		
+	}
 	
 
 	@Override

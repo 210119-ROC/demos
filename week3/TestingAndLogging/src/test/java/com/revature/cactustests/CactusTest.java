@@ -1,6 +1,7 @@
 package com.revature.cactustests;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,8 +42,7 @@ public class CactusTest {
 		cactus = new Cactus(7, 2, "Green", startingFlowers);
 	}
 	
-	
-	
+
 	// Here we will create a method to prove that our catcus's bloom method works
 	@Test
 	public void testBloom() {
@@ -65,6 +65,60 @@ public class CactusTest {
 		assertEquals(600, Cactus.add(200, 400));
 		
 	}
+	
+	/*
+	 * TDD is when you write the tests BEFORE you write the code
+	 */
+	@Test
+	public void testDivide() {
+		
+		assertEquals(5, cactus.divide(15, 3));
+		
+	}
+	
+	@Test
+	public void doesCactusExist() {
+		
+		assertNotNull(cactus);
+		
+	}
+	
+	@Test
+	public void growTest1() {
+		
+		Cactus c2 = new Cactus();
+		
+		c2.setHeight(3); // 3 + 0.02 = 3.02
+		
+		assertEquals(3.02, c2.grow(2.0), 0.001); // takes in 2 inches of rainfall
+		
+	}
+	
+	// What happens if I put a negative value into grow...
+	// You must include the expected exception that will be thrown in the annotation itself.
+	@Test(expected = IllegalArgumentException.class)
+	public void negativeGrowthTest() {
+		
+		cactus.grow(-3.0);
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 
 }

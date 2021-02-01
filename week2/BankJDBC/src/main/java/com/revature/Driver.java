@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 import com.revature.dao.UserDao;
 import com.revature.dao.UserDaoImpl;
-import com.revature.exceptions.InsufficientFundsException;
-import com.revature.models.Account;
 import com.revature.service.UserService;
 
 public class Driver {
