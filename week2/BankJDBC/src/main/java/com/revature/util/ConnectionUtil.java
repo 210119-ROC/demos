@@ -31,7 +31,7 @@ public class ConnectionUtil {
 		try {
 			prop.load(new FileReader("C:\\Users\\SophieGavrila\\Desktop\\demos\\week2\\BankJDBC\\src\\main\\resources\\application.properties"));
 			
-			// we use the DriverManager class from JDBC to inpiut our credentials and
+			// we use the DriverManager class from JDBC to input our credentials and
 			// establish a connection with the db.
 			conn = DriverManager.getConnection(
 					prop.getProperty("url"), 

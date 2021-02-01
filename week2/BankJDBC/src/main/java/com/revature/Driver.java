@@ -12,7 +12,7 @@ public class Driver {
 
 	public static void main(String[] args) {
 		
-//		run();
+		run();
 		
 		UserDao dao = new UserDaoImpl();
 		
