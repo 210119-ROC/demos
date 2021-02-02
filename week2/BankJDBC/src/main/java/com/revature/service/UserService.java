@@ -25,12 +25,12 @@ import com.revature.models.User;
 public class UserService {
 	
 	// calling the interface......// then the class that implements it to create a DAO object
-	private static UserDaoImpl dao = new UserDaoImpl();
+	private static UserDao dao = new UserDaoImpl();
 	
 	
 	// the starting place before you get creative, is to incorporate all CRUD methods.
 	
-	
+	// If the add method is successful, it returns the number 1 
 	public int add(User u) {
 		
 		return dao.insert(u);

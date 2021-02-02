@@ -53,7 +53,7 @@ public class UserDaoImpl implements UserDao {
 			stmt.setInt(6, u.getRole().getId()); // this is returning the int value for the Role id of the Role object
 
 			// Step 4: Execute the statement;
-			return stmt.executeUpdate(); // this will return the number of statements executed (1)
+			return stmt.executeUpdate(); // this will return the number of rows inserted (1)
 
 		} catch (SQLException e) {
 			// Step 5: Perform any exception handling in an appropriate means
@@ -189,27 +189,13 @@ public class UserDaoImpl implements UserDao {
 					ResultSet rs = ps.executeQuery();
 
 					while (rs.next()) {
-						
-						if (rs.getInt(7) == 1) {
-							u = new BankAdmin();
-						} else if (rs.getInt(7) == 2) {
-							u = new Employee();
-						} else if (rs.getInt(7) == 3) {
-							u = Customer();
-						}
-							
-						
 						u.setId(rs.getInt(1));
 						u.setUsername(username); // we already passed this in through the method
 						u.setPassword(rs.getString(3));
 						u.setFirstName(rs.getString(4)); // this denotes the number of the column of data that's returning
 						u.setLastName(rs.getString(5));
 						u.setEmail(rs.getString(6));
-						
-						if (rs.getInt(7) == 1) {
-							
-						}
-						
+
 						u.setRole(new Role(rs.getInt("role_id"), rs.getString("role_name"))); // THIS IS FROM THE ROLES table
 						// we "stuck" the roles table TO the users table with a joins statement
 						// ^ the above line builds a role object ^ 
