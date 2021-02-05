@@ -46,12 +46,27 @@ public class LambdaDriver {
 		mfi.printSomething();
 	}
 	
-	public static void something() {
-		Predicate<Integer> myPred = () -> {
-			// this won't work becatse Predicate's test() function doesn't like it
-		};
-	}
+	Predicate<Integer> isPrime = n -> {
+		
+		int count=0;
+		
+		for (int i=2;i<=(n/2)+1;i++)
+			
+			if (n%i==0) count++;
+		
+		if (count>=1) return false;
+
+		return true;
+	};
+
+
 	
+//	public static void something() {
+//		Predicate<Integer> myPred = () -> {
+//			// this won't work becatse Predicate's test() function doesn't like it
+//		};
+//	}
+//	
 	/*
 	 * Java 8 provides us built-in functional interfaces such as Consumer,
 	 * Predicate, Supplier.
