@@ -15,7 +15,6 @@ public class CastingDriver {
 		 */
 		
 		
-		
 		byte b = 40;// (source type)
 		short s = b; // we are converting a byte INTO a short (This is our target type)
 		int z = 2;
@@ -33,7 +32,7 @@ public class CastingDriver {
 		int i = 100; // (int is our source and is SMALLER that double)
 		double d = i; // so, our target has more space to take on this value
 		
-		// Casting is needed when we need to explicit conversino from a larger
+		// Casting is needed when we need to explicitly convert from a larger data type to a smaller one
 		double x = 10.99;
 		int y = (int) x; // this will "floor" an int
 		
@@ -49,21 +48,21 @@ public class CastingDriver {
 		// Double, Short, Long...etc
 		ArrayList<Integer> number = new ArrayList<Integer>();
 		
-		// We are createing an Integer OBJECT that has the value of our primitive data type
+		// We are creating an Integer OBJECT that has the value of our primitive data type
 		// This process is referred to as Autoboxing
 		// Autoboxing is the process of converting primitive datatypes into their corresponding objects
 		Integer myObj = Integer.valueOf(num);
 		
 		System.out.println(num + " " + myObj);
 
-		// Unboxing is the process of converting an object into its priomitive datatype
+		// Unboxing is the process of converting an object into its primitive datatype
 		Integer myOtherObj = new Integer(10);
 		System.out.println(myOtherObj);
 		
 		int myPrimitive =  myOtherObj.intValue(); // myOtherObj now points to a primitive datatype stored in the STACK.
 		
-		
-		
+		// To find the max value of an Integer
+		System.out.println(Integer.MAX_VALUE);
 	}
 
 }
