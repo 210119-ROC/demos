@@ -48,7 +48,7 @@ Be prepared to answer any of the following questions for QC and interviews on **
 
 <div align="center"><strong>Remember to harness the power of Google as you study.</strong></div>
 
-[![Image from Gyazo](https://i.gyazo.com/067549d67e91a451ad38e2fef1c02493.gif)](https://gyazo.com/067549d67e91a451ad38e2fef1c02493)
+[![Image from Gyazo](https://i.gyazo.com/bcde9cbc8b8b67bf3a4cefde4d069ba9.gif)](https://gyazo.com/bcde9cbc8b8b67bf3a4cefde4d069ba9)
 
 
 
